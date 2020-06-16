@@ -35,7 +35,7 @@ app.get('/about',(req,res)=>{
 
 app.get('/help',(req,res)=>{
     res.render('help',{
-        helpText:'Some helpful text is here',
+        helpText:'Please enter a valid address. To get accurate results enter the state name as well ',
         title:'Help',
         name:'krishna'
         
