@@ -12,7 +12,7 @@ const forecast = (longitute,latitude,callback) => {
             callback("some thing wrong with the inpud",undefined)
         }
         else{
-           callback(undefined,"the temprature in "+body.name+" is "+body.main.temp+" and "+body.weather[0].description+ "wind speed is " +body.wind.speed +" mph")
+           callback(undefined,"Temprature in "+body.name+" is "+body.main.temp+". Today's Low: "+body.main.temp_min+"; Today's high"+body.main.temp_max+" and feels like " +body.main.feels_like+". Description: "+body.weather[0].description+ " and wind speed is " +body.wind.speed +" mph")
         }
     })
 }
